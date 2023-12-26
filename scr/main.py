@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 import uvicorn
-from fastapi.responses import RedirectResponse
-from users.routers import router as users_router
+from fastapi.responses import RedirectResponse 
+from users.routers import router as users_router #import user routers for prefix
 
 app = FastAPI()
 
-app.include_router(users_router, prefix='/users') #main prefix
+app.include_router(users_router, prefix='/users', tags=["users"]) 
 
 @app.get('/')
 def root():

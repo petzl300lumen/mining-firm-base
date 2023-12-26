@@ -1,8 +1,22 @@
-from users.models import UserClass
-from users.models import UserPost
+from users.models import UserClass, UserPut, UserPost #import models
+#from scr.server.BASE import base_manager
+# from .scr.database.DB_Manager 
 
-def get_users(user_id_g: UserClass):
+#post
+def post_users(user_in: UserPost):
     pass
 
-def post_users(new_user: UserPost):
+
+#get
+def get_users(user_in: UserClass):
+    
+    
+    pass
+
+#put
+def put_user(user_in: UserPut):
+    pass
+
+#delete
+def delete_user(user_in: int):
     pass

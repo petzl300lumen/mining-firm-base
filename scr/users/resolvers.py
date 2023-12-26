@@ -1,5 +1,5 @@
 from users.models import UserClass, UserPut, UserPost #import models
-#from scr.server.BASE import base_manager
+# from scr.BASE import base_manager
 # from .scr.database.DB_Manager 
 
 #post
